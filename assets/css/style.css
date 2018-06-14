@@ -1,0 +1,114 @@
+body{
+  color: white;
+}
+.container-fluid, .row{
+  padding: 0;
+  margin: 0;
+}
+h2{
+  text-align: center;
+}
+#presentation{
+  height: 100vh;
+}
+#formation, #contact{
+  background-color: black;
+}
+#competence, #experience{
+  background-color: #f24236;
+}
+footer{
+  height: 140px;
+  background-color: #564138;
+  text-align: center;
+}
+footer i{
+  margin: 10px 0 25px 0;
+  color: darkgrey;
+  font-size: 35px;
+}
+ul{
+  list-style-type: none;
+}
+#video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+}
+.vanille{
+  height: 2px;
+  width: 16%;
+  background-color: #f6f5ae;
+  margin: 10px 0 10px 42%;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+}
+#navigateur ul li a:hover{
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+  #formation .row{
+    padding: 15px;
+  }
+  #formation .row div{
+    height: 250px;
+    background-color: grey;
+    border-radius: 45px;
+    padding: 15px;
+  }
+#formation .row div:hover{
+  transform: scale(1.01, 1.01);
+  border: 2px white solid;
+}
+.bio{
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 12px 0 12px 0;
+  padding: 15px;
+}
+@media all and (max-width: 767px){
+  .espace, .bloc{
+    height: 0;
+  }
+  #competence{
+    height: 680px;
+  }
+  section{
+    padding-top: 40px;
+  }
+  .navbar{
+    font-size: 1.2em;
+  }
+  body{
+      font-family: 'Roboto', sans-serif;
+  }
+  .nomTitre, .nomTitre h1{
+    font-size: 23px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+}
+@media all and (min-width: 767px){
+  .espace{
+    height: 40vh;
+  }
+  .bloc{
+    height: 50%;
+  }
+  #competence{
+    height: 500px;
+  }
+  section{
+    padding-top: 74px;
+  }
+  .navbar{
+    font-size: 2.4em;
+    font-family: 'Amatic SC', cursive;
+  }
+  .nomTitre{
+    font-size: 3em;
+    font-family: 'Bungee Shade', cursive;
+  }
+}
