@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
   integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
   <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Fredericka+the+Great|Spectral" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Fredericka+the+Great|Spectral|Montserrat" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -58,14 +58,20 @@
               </div>
             </div>
             <div class="col-12 col-md-3 offset-md-1 bio">
-              <p>
-                24 ans, actuellement en formation à E2N je rêve de devenir développeur Back-end,
-                j'ai pour projet de créer un site communautaire sur les films et séries disponibles
-                sur les différentes plateformes de VOD.
-                <br />
-                En plus du monde cinéma, je suis également passionné l'actualité technologique
-                ainsi que d'astronomie.
-              </p>
+              <h2>Qui suis-je?</h2>
+              <ul>
+                <li>12/02/1994</li>
+                <li>
+                  <p>
+                    Noyon - Hauts-de-france<br />
+                    (50min de Paris)<br />
+                  </p>
+                </li>
+                <li>Informatique</li>
+                <li>Poker</li>
+                <li>Cinéma</li>
+                <li>Astronomie</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -242,25 +248,81 @@
         <div class="vanille"></div>
         <h2>Ma formation</h2>
         <div class="row d-flex justify-content-center">
-          <div class="col-sm-2">
-            <h3>Lycée Mireille Grenet</h3>
+          <div class="col-sm-2 can">
+            <h5>2013</h5>
+            <h4>Lycée Mireille Grenet - Compiègne</h4>
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Baccalauréat Sti2d</h3>
+            <div class="vanille"></div>
+            <p>
+              Spécialisation Innovation
+              <br />
+              Technologique et Éco-Conception
+            </p>
           </div>
-          <div class="col-sm-2 offset-sm-1">2efze</div>
-          <div class="col-sm-2 offset-sm-1">2efze</div>
+          <div class="col-sm-2 offset-sm-1 can">
+            <h5>2014</h5>
+            <h3>Lycée Edouard Branly - Amiens</h3>
+            <i class="fas fa-graduation-cap"></i>
+            <h4>1ere année BTS IRIS</h4>
+              <div class="vanille"></div>
+              <p>
+                Informatique et réseaux pour l'industrie
+                <br />
+                et les services techniques
+              </p>
+          </div>
+          <div class="col-sm-2 offset-sm-1 can">
+            <h5>2017</h5>
+            <h3>Formation en ligne</h3>
+            <i class="fas fa-code"></i>
+            <h4><a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a></h4>
+            <h4><a href="https://www.udemy.com" target="_blank">Udemy</a></h4>
+            <h4><a href="https://www.codecademy.com" target="_blank">Codecademy</a></h4>
+          </div>
+          <div class="col-sm-2 offset-sm-1 can">
+            <h5>2018</h5>
+            <h3><a href="http://formation.novei.fr/" target="_blank">E2N</a> - Noyon</h3>
+            <i class="fas fa-code"></i>
+            <h4>Titre pro Dévelopeur Logiciel</h4>
+              <div class="vanille"></div>
+              <p>Diplome de niveau 3/bac +2
+                <br />
+                (en cours)
+              </p>
+          </div>
         </div>
-        <!-- 2013 bac techno sti2d
-        2014 bts iris 1ere année
-        2017 oc/udemy/codecademy
-        2018 e2n -->
       </section>
       <section id="experience">
         <div class="vanille"></div>
         <h2>Mon expérience</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Réalisation d'un stand pour le forum de l'emploi de 2018 de Noyon</h3>
+            <ul>
+              <li>Equipe de 5 personnes entre 20 et 24ans</li>
+              <li>Mise à jour de la liste de sites de la Mission Locale</li>
+              <li>Création d'une brochure pour les sites généraux</li>
+              <li>Création d'une dizaine de flyers pour chaque domaines</li>
+              <li>Création d'une animation autour d'une <a href="http://www.virtualsensitive.com" target="_blank">Coconote</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>Aide dans l'épicerie familliale</h3>
+            <ul>
+              <li>Gestion de la caisse</li>
+              <li>Gestion du stock</li>
+              <li>Gestion des clients</li>
+              <li>Gestion du relais colis</li>
+              <li>Mise en rayon</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <div class="vanille"></div>
-        <div class="container">
-          <h2>Contact</h2>
+        <h2>Vous souhaitez me contacter ?</h2>
+        <!-- <div class="container">
           <div class="row">
             <div class="col-md-10 offset-xl-1">
               <form id="contact-form" method="post" action="#">
@@ -284,11 +346,16 @@
               </form>
             </div>
           </div>
+        </div> -->
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-4"><a href="https://github.com/egalland" target="_blank" title="Lien vers Github"><i class="fab fa-github-square"></i>https://github.com/egalland</a></div>
+          <div class="col-sm-4"><a href="callto:0658902164" title="Numéro de téléphone"><i class="fas fa-phone-square"></i>06 58 90 21 64</a></div>
+          <div class="col-sm-4"><a href="mailto:emmanuel.galland117@gmail.com" title="Adresse e-mail"><i class="fas fa-envelope-square"></i>emmanuel.galland117@gmail.com</a></div>
         </div>
       </section>
       <footer>
         <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
-        <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+        <p>egalland.github.io</p>
       </footer>
     </div>
   </body>
