@@ -1,179 +1,180 @@
-body{
-  color: white;
+@keyframes rotationWord{
+	from {
+		transform: rotate(1deg)
+		           translate(180px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(180px) 
+		           rotate(-360deg);
+	}
 }
-.container-fluid, .row{
+
+@keyframes shadow-pop-tr{
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+            transform: translateX(-8px) translateY(8px);
+  }
+}
+
+@keyframes vibrate-1{
+  0% {
+            transform: translate(0);
+  }
+  20% {
+            transform: translate(-2px, 2px);
+  }
+  40% {
+            transform: translate(-2px, -2px);
+  }
+  60% {
+            transform: translate(2px, 2px);
+  }
+  80% {
+            transform: translate(2px, -2px);
+  }
+  100% {
+            transform: translate(0);
+  }
+}
+
+body{
   padding: 0;
   margin: 0;
+  background:url('../images/adventure-astro-astrophotography-1009136.jpg') -25px -50px;
+  top:0;
+  width:100%;
+  z-index:0;
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
-h2{
-  text-align: center;
-  padding-bottom: 15px;
+
+#startPageCarousel, #skills{
+  background: rgba(255,255,255,.3);
+  border-radius:5px;
+  border:1px solid rgba(255,255,255,.3);
+  text-shadow:0 1px 1px rgba(0,0,0,.4);
 }
-#presentation{
-  height: 100vh;
+
+.carousel-item{
+  height: 80vh;
 }
-#presentation li{
-  list-style-type: square;
+
+.imageCarousel{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
 }
-#formation, #contact{
+
+.gridTile {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    background: url("../images/gridtile.png") repeat;
+    z-index: 100;
+} 
+
+.carousel-indicators{
+  z-index: 2000;
+  position: relative;
+  top: 10px;
+}
+
+.carousel-indicators li{
+  height: 6px;
+  padding: 0 8%;
+}
+
+.progressBar {
+  height: 10px;
+  width: 100%;
+  margin: -8px 0 0 0;
+  border: none;
+  z-index: 1;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  z-index: 101;
+  padding-top: 60vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  transition: 0.5s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+  transform: scale(1.4,1.4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.carousel-caption{
+  z-index: 1001;
+}
+
+.githubButton{
+  border-width: 3px;
+  font-weight: 800;
+}
+
+.disabled{
+  cursor: not-allowed;
+}
+
+#javascript{
+  margin: 140px;
+  color: white;
+  cursor: default;
+
+}
+
+#javascript h3{
+  margin-left: -40px;
+  background-image: url('../images/mars.png');
+  display: block;
+  padding: 80px 16px;
+  border-radius: 1000px;
+  /*animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;*/
+  font-weight: 700;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+}
+
+#javascript h3:hover{
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+#javascript h4:nth-child(2){
+  animation-delay: -2.5s;
+}
+
+#javascript h4{
+  animation: rotationWord 5s infinite linear;
+  position: relative;
+  margin-left: 0px;
+  margin-top: -150px;
   background-color: black;
-}
-#competence, #experience{
-  background-color: #5d576b;
-}
-ul{
-  list-style-type: none;
-}
-.navbar{
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0;
-}
-#navigateur ul li a:hover{
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-}
-#video{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: -1000;
-}
-.bio{
-  background-color: rgba(255, 255, 255, 0.12);
-  border-radius: 12px 0 12px 0;
-  padding: 15px;
-}
-.vanille{
-  height: 2px;
-  width: 16%;
-  background-color: #f6f5ae;
-  margin: 10px 0 10px 42%;
-}
-#formation .row{
-  padding: 15px;
-}
-.can{
-  height: 380px;
-  background-color: grey;
-  border-radius: 45px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-#formation .row div:hover{
-  transform: scale(1.01, 1.01);
-  border: 2px white solid;
-}
-#formation{
-  text-align: center;
-}
-#formation i{
-  font-size: 2em;
-  color: Beige;
-  margin: 15px;
-}
-#formation a{
-  text-decoration: none;
-  color: Red;
-}
-#formation a:hover{
-  color: Black;
-}
-#experience .row{
-  margin-top: 30px;
-}
-#experience li{
-  list-style-type: square;
-}
-#contact a{
-  text-decoration: none;
-  color: white;
-}
-#contact i{
-  font-size: 3em;
-  margin: 20px;
-}
-#contact i:hover, #contact a:hover{
-  color: Blueviolet;
-  transform: rotate(10deg) scale(1.2, 1.2);
-}
-footer{
-  height: 140px;
-  background-color: #564138;
-  text-align: center;
-}
-footer i{
-  margin: 10px 0 25px 0;
-  color: darkgrey;
-  font-size: 3em;
-}
-@media all and (max-width: 767px){
-  .espace, .bloc{
-    height: 0;
-  }
-  #competence{
-    height: 680px;
-  }
-  section{
-    padding-top: 30px;
-  }
-  .navbar{
-    font-size: 1.2em;
-  }
-  body{
-    font-family:'Roboto',sans-serif;
-  }
-  .nomTitre, .nomTitre h1{
-    font-size: 23px;
-    margin-bottom: 22px;
-    text-align: center;
-  }
-  #formation i{
-    font-size: 1.5em;
-  }
-  #experience{
-    height: 750px;
-  }
-  h3{
-    font-size: 1.4em;
-  }
-  #contact a{
-    font-size: 0.7em;
-  }
-}
-@media all and (min-width: 767px){
-  .espace{
-    height: 40vh;
-  }
-  .bloc{
-    height: 50%;
-  }
-  #competence{
-    height: 500px;
-  }
-  section{
-    padding-top: 64px;
-  }
-  .navbar{
-    font-size: 2.4em;
-    font-family: 'Amatic SC', cursive;
-  }
-  .nomTitre{
-    font-size: 3em;
-    font-family: 'Bungee Shade', cursive;
-  }
-  body{
-    font-family:'Montserrat',sans-serif;
-  }
-  #formation i{
-    font-size: 2em;
-  }
-  h3{
-    font-size: 1.2em;
-  }
-  #experience{
-    height: 400px;
-  }
-  #contact a{
-    font-size: 1.1em;
-  }
+  padding: 40px 16px;
+  border-radius: 1000px;
+  width: 120px;
+  height: 120px;
 }

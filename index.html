@@ -1,336 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <title>Mon CV</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <!-- CDN BOOTSTRAP -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-  integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <!-- CDN FONT AWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
-  <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Fredericka+the+Great|Spectral|Montserrat" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigateur">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="assets/images/pill.png" />
+    <title>Emmanuel Galland - Accueil</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Emmanuel Galland</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navigateur">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#presentation">Qui suis-je?</a></li>
-          <li class="nav-item"><a class="nav-link" href="#competence">Compétences</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Réalisations</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <video id="video" autoplay muted loop>
-      <source src="assets/video/asteroideVideo.mp4" type="video/mp4">
-        Désolé, votre navigateur ne parvient pas à afficher la vidéo de fond
-      </video>
-      <section id="presentation">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 espace"></div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-8">
-              <div class="row h-100">
-                <div class="col-12 bloc"></div>
-                <div class="col-12 animated rollIn nomTitre">
-                  <p>Emmanuel Galland</p>
-                  <h1>Développeur WEB</h1>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-3 offset-md-1 bio">
-              <h2>Qui suis-je?</h2>
-              <ul>
-                <li>12/02/1994</li>
-                <li>
-                  <p>
-                    Noyon - Hauts-de-france<br />
-                    (50min de Paris)<br />
-                  </p>
-                </li>
-                <li>Informatique</li>
-                <li>Poker</li>
-                <li>Cinéma</li>
-                <li>Astronomie</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="competence">
-        <div class="vanille"></div>
-        <div class="container">
-          <h2>Mes compétences</h2>
-          <div class="row">
-            <div class="col-md-6 col-12">
-              <div class="row">
-                <div class="col-4">
-                  <p>HTML</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Bootstrap</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-adjust"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>JavaScript</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Python</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>PHP</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>SQL</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Nano</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="row">
-                <div class="col-4">
-                  <p>CSS</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-adjust"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>jQuery</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Photoshop</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Atom</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Terminal</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-adjust"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p>Git</p>
-                </div>
-                <div class="col-8">
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-circle"></i>
-                  <i class="fas fa-adjust"></i>
-                  <i class="far fa-circle"></i>
-                  <i class="far fa-circle"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="formation">
-        <div class="vanille"></div>
-        <h2>Ma formation</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-2 can">
-            <h5>2013</h5>
-            <h4>Lycée Mireille Grenet - Compiègne</h4>
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Baccalauréat Sti2d</h3>
-            <div class="vanille"></div>
-            <p>
-              Spécialisation Innovation
-              <br />
-              Technologique et Éco-Conception
-            </p>
-          </div>
-          <div class="col-sm-2 offset-sm-1 can">
-            <h5>2014</h5>
-            <h3>Lycée Edouard Branly - Amiens</h3>
-            <i class="fas fa-graduation-cap"></i>
-            <h4>1ere année BTS IRIS</h4>
-              <div class="vanille"></div>
-              <p>
-                Informatique et réseaux pour l'industrie
-                <br />
-                et les services techniques
-              </p>
-          </div>
-          <div class="col-sm-2 offset-sm-1 can">
-            <h5>2017</h5>
-            <h3>Formation en ligne</h3>
-            <i class="fas fa-code"></i>
-            <h4><a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a></h4>
-            <h4><a href="https://www.udemy.com" target="_blank">Udemy</a></h4>
-            <h4><a href="https://www.codecademy.com" target="_blank">Codecademy</a></h4>
-          </div>
-          <div class="col-sm-2 offset-sm-1 can">
-            <h5>2018</h5>
-            <h3><a href="http://formation.novei.fr/" target="_blank">E2N</a> - Noyon</h3>
-            <i class="fas fa-code"></i>
-            <h4>Titre pro Développeur Logiciel</h4>
-              <div class="vanille"></div>
-              <p>Diplome de niveau 3/bac +2
-                <br />
-                (en cours)
-              </p>
-          </div>
-        </div>
-      </section>
-      <section id="experience">
-        <div class="vanille"></div>
-        <h2>Mon expérience</h2>
-        <div class="row">
-          <div class="col-sm-6">
-            <h3>Réalisation d'un stand pour le forum de l'emploi de 2018 de Noyon</h3>
-            <ul>
-              <li>Equipe de 5 personnes entre 20 et 24ans</li>
-              <li>Mise à jour de la liste de sites de la Mission Locale</li>
-              <li>Création d'une brochure pour les sites généraux</li>
-              <li>Création d'une dizaine de flyers pour chaque domaines</li>
-              <li>Création d'une animation autour d'une <a href="http://www.virtualsensitive.com" target="_blank">Coconote</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <h3>Aide dans l'épicerie familliale</h3>
-            <ul>
-              <li>Gestion de la caisse</li>
-              <li>Gestion du stock</li>
-              <li>Gestion des clients</li>
-              <li>Gestion du relais colis</li>
-              <li>Mise en rayon</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="vanille"></div>
-        <h2>Vous souhaitez me contacter ?</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-3"><a href="https://github.com/egalland" target="_blank" title="Lien vers Github"><i class="fab fa-github-square"></i>https://github.com/egalland</a></div>
-          <div class="col-sm-3"><a href="callto:0658902164" title="Numéro de téléphone"><i class="fas fa-phone-square"></i>06 58 90 21 64</a></div>
-          <div class="col-sm-3"><a href="mailto:emmanuel.galland117@gmail.com" title="Adresse e-mail"><i class="fas fa-envelope-square"></i>emmanuel.galland117@gmail.com</a></div>
-          <div class="col-sm-3"><a href="https://www.linkedin.com/in/emmanuel-galland-63a467166/" title="LinkedIn"><i class="fab fa-linkedin"></i></i>LinkedIn</a></div>
-        </div>
-      </section>
-      <footer>
-        <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
-        <p>egalland.github.io</p>
-      </footer>
-    </div>
-  </body>
-  </html>
+    <h1>Emmanuel Galland - Développeur</h1>
+    <h2><i class="fas fa-angle-double-left"></i> Je suis spécialiste de rien et je connais un petit peu tout <i class="fas fa-angle-double-right"></i></h2>
+    <div class="d-flex justify-content-center">
+        <a href="https://github.com/egalland" target="_blank" title="Lien vers Github"><i class="fab fa-github-square"></i> Github</a>
+        <a href="callto:0658902164" title="Numéro de téléphone"><i class="fas fa-phone-square"></i>06 58 90 21 64</a>
+        <a href="mailto:emmanuel.galland117@gmail.com" title="Adresse e-mail"><i class="fas fa-envelope-square"></i>emmanuel.galland117@gmail.com</a>
+        <a href="https://www.linkedin.com/in/emmanuel-galland-63a467166/" title="LinkedIn"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+      </div>
