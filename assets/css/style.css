@@ -148,7 +148,7 @@ body{
 
 #javascript h3{
   margin-left: -40px;
-  background-image: url('../images/mars.png');
+  background-image: url('../images/sun.png');
   display: block;
   padding: 80px 16px;
   border-radius: 1000px;
@@ -178,7 +178,7 @@ body{
 
 #javascript h4{
   animation: rotationWord 5s infinite linear;
-  position: relative;
+  position: absolute;
   margin-left: 0px;
   margin-top: -150px;
   background-color: black;
@@ -186,4 +186,5 @@ body{
   border-radius: 1000px;
   width: 120px;
   height: 120px;
+  text-align: center;
 }
