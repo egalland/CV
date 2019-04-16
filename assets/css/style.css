@@ -164,7 +164,16 @@ body{
 }
 
 #javascript h4:nth-child(2){
-  animation-delay: -2.5s;
+  animation-delay: -1s;
+}
+#javascript h4:nth-child(3){
+  animation-delay: -2s;
+}
+#javascript h4:nth-child(4){
+  animation-delay: -3s;
+}
+#javascript h4:nth-child(5){
+  animation-delay: -4s;
 }
 
 #javascript h4{
