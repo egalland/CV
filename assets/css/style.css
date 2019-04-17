@@ -11,6 +11,57 @@
 	}
 }
 
+@keyframes rotationWord2{
+	from {
+		transform: rotate(0deg)
+		           translate(300px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(300px) 
+		           rotate(-360deg);
+	}
+}
+
+@keyframes rotationWord3{
+	from {
+		transform: rotate(0deg)
+		           translate(420px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(420px) 
+		           rotate(-360deg);
+	}
+}
+
+@keyframes rotationWord4{
+	from {
+		transform: rotate(0deg)
+		           translate(540px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(540px) 
+		           rotate(-360deg);
+	}
+}
+
+@keyframes rotationWord5{
+	from {
+		transform: rotate(0deg)
+		           translate(660px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(660px) 
+		           rotate(-360deg);
+	}
+}
 @keyframes shadow-pop-tr{
   0% {
     box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -140,7 +191,7 @@ body{
 }
 
 #javascript{
-  margin: 140px;
+  margin: 50%;
   color: white;
   cursor: default;
 
@@ -160,20 +211,7 @@ body{
 }
 
 #javascript h3:hover{
-  animation: vibrate-1 0.3s linear infinite both;
-}
-
-#javascript h4:nth-child(2){
-  animation-delay: -1s;
-}
-#javascript h4:nth-child(3){
-  animation-delay: -2s;
-}
-#javascript h4:nth-child(4){
-  animation-delay: -3s;
-}
-#javascript h4:nth-child(5){
-  animation-delay: -4s;
+  animation: vibrate-1 0.3s linear infinite;
 }
 
 #javascript h4{
@@ -181,10 +219,40 @@ body{
   position: absolute;
   margin-left: 0px;
   margin-top: -150px;
-  background-color: black;
   padding: 40px 16px;
-  border-radius: 1000px;
   width: 120px;
   height: 120px;
   text-align: center;
+}
+
+#javascript h4{
+  animation: rotationWord 4s infinite linear;
+  background-image: url('../images/mercury.png');
+  background-size: cover;
+  animation-delay: -5s;
+}
+#javascript h4:nth-child(2){
+  animation: rotationWord2 6s infinite linear;
+  background-image: url('../images/venus.png');
+  background-size: cover;
+}
+
+#javascript h4:nth-child(3){
+  animation: rotationWord3 8s infinite linear;
+  background-image: url('../images/earth.png');
+  background-size: cover;
+  animation-delay: -10s;
+
+}
+#javascript h4:nth-child(4){
+  animation: rotationWord4 10s infinite linear;
+  background-image: url('../images/mars.png');
+  background-size: cover;
+  animation-delay: -5s;
+}
+#javascript h4:nth-child(5){
+  animation: rotationWord5 20s infinite linear;
+  background-image: url('../images/jupiter.png');
+  background-size: cover;
+  animation-delay: -2s;
 }
