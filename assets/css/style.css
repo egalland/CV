@@ -1,12 +1,12 @@
 @keyframes rotationWord{
 	from {
 		transform: rotate(0deg)
-		           translate(180px)
+		           translate(160px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(180px) 
+		           translate(160px) 
 		           rotate(-360deg);
 	}
 }
@@ -27,12 +27,12 @@
 @keyframes rotationWord3{
 	from {
 		transform: rotate(0deg)
-		           translate(380px)
+		           translate(400px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(380px) 
+		           translate(400px) 
 		           rotate(-360deg);
 	}
 }
@@ -40,25 +40,36 @@
 @keyframes rotationWord4{
 	from {
 		transform: rotate(0deg)
-		           translate(480px)
+		           translate(520px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(480px) 
+		           translate(520px) 
 		           rotate(-360deg);
 	}
 }
-
 @keyframes rotationWord5{
 	from {
 		transform: rotate(0deg)
-		           translate(580px)
+		           translate(660px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(580px) 
+		           translate(660px) 
+		           rotate(-360deg);
+	}
+}
+@keyframes rotationWord6{
+	from {
+		transform: rotate(0deg)
+		           translate(760px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(760px) 
 		           rotate(-360deg);
 	}
 }
@@ -250,8 +261,32 @@ body{
   background-image: url('../images/mars.png');
   animation-delay: -23s;
 }
+.belt{
+  animation: rotationWord5 26s infinite linear;
+  background-image: url('../images/asteroide.png');
+  animation-delay: -23s;
+  padding-top: 25px !important;
+  width: 7rem !important;
+  height: 5rem !important;
+}
+[class~='belt']:nth-last-of-type(2){
+  animation: rotationWord5 150s infinite linear;
+  animation-delay: -90s;
+}
+[class~='belt']:nth-last-of-type(3){
+  animation: rotationWord5 59s infinite linear;
+  animation-delay: -9s;
+}
+[class~='belt']:nth-last-of-type(4){
+  animation: rotationWord5 80s infinite linear;
+  animation-delay: -30s;
+}
+[class~='belt']:nth-last-of-type(5){
+  animation: rotationWord5 110s infinite linear;
+  animation-delay: -56s;
+}
 .jupiter{
-  animation: rotationWord5 200s infinite linear;
+  animation: rotationWord6 200s infinite linear;
   background-image: url('../images/jupiter.png');
   animation-delay: -400s;
 }
