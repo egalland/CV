@@ -73,6 +73,42 @@
 		           rotate(-360deg);
 	}
 }
+@keyframes rotationWord7{
+	from {
+		transform: rotate(0deg)
+		           translate(760px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(760px) 
+		           rotate(-360deg);
+	}
+}
+@keyframes rotationWord8{
+	from {
+		transform: rotate(0deg)
+		           translate(760px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(760px) 
+		           rotate(-360deg);
+	}
+
+}@keyframes rotationWord9{
+	from {
+		transform: rotate(0deg)
+		           translate(760px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(760px) 
+		           rotate(-360deg);
+	}
+}
 @keyframes shadow-pop-tr{
   0% {
     box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
@@ -288,5 +324,23 @@ body{
 .jupiter{
   animation: rotationWord6 200s infinite linear;
   background-image: url('../images/jupiter.png');
+  animation-delay: -400s;
+}
+.saturne{
+  animation: rotationWord7 110s infinite linear;
+  background-image: url('../images/saturne.png');
+  animation-delay: -400s;
+  padding-top: 25px !important;
+  width: 10rem !important;
+  height: 5rem !important;
+}
+.uranus{
+  animation: rotationWord8 160s infinite linear;
+  background-image: url('../images/uranus.png');
+  animation-delay: -400s;
+}
+.neptune{
+  animation: rotationWord9 20s infinite linear;
+  background-image: url('../images/neptune.png');
   animation-delay: -400s;
 }
