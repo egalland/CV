@@ -56,6 +56,10 @@ $(function(){
 
     });
 
+    $('.datepicker').on('mousedown',function(event){
+        event.preventDefault();
+    })
+
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 80, 
