@@ -32,12 +32,90 @@ $(function(){
                 $('body').append(`
                     <div id="test">
                         <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
+                            <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="assets/images/mercury_full.jpg">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Mercure<i class="material-icons right">more_vert</i></span>
                                 <p>Votre âge sur Mercure est de ${mercuryAge} an${mercuryAge > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/venus_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Venus<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur Mercure est de ${venusAge} an${venusAge > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/earth_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Terre<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur Mercure est de ${earthAge} an${earthAge > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/mars_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Mars<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur Mercure est de ${marsAge} an${marsAge > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/jupiter_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Jupiter<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur Mercure est de ${jupiterAge} an${jupiterAge > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/uranus_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Uranus<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur Mercure est de ${uranusAge} an${uranusAge > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/neptune_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Neptune<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur Mercure est de ${neptuneAge} an${neptuneAge > 1? 's' : ''}.</p>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Mercure</span>
@@ -51,7 +129,6 @@ $(function(){
             }
         }else{
             alert('ALERTE GENERALE');
-            
         }
 
     });
