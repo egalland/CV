@@ -28,31 +28,30 @@ $(() =>{
                     ['uranus' , 'Uranus'],
                     ['neptune' , 'Neptune']
                 ];
-                $('#test').remove();
-                $('body').append(`<div id="test"></div>`);
+                $('#resultSolarSys').remove();
+                $('body').append(`<div id="resultSolarSys"></div>`);
+                var html = '';
                 solarSys.forEach((solarSysArray,index) =>{
 
-                    $('#test').append(`
-                    ${index % 4 == 0? '<div class="row">' : ''}
-                    <div class="card col s12 m6 l3">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="assets/images/${solarSysArray[0]}_full.jpg">
+                    html += 
+                    `${index % 4 == 0? '<div class="row">' : ''}
+                        <div class="card col s12 m6 l3">
+                            <div class="card-image waves-effect waves-block waves-light medium">
+                                <img class="activator" src="assets/images/${solarSysArray[0]}_full.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">${solarSysArray[1]}<i class="material-icons right">more_vert</i></span>
+                                <p>Votre âge sur ${solarSysArray[1]} est de ${eval(solarSysArray[0]+'Age')} an${eval(solarSysArray[0]+'Age') > 1? 's' : ''}.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>${solarSysArray[1]}</span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">${solarSysArray[1]}<i class="material-icons right">more_vert</i></span>
-                            <p>Votre âge sur ${solarSysArray[1]} est de ${eval(solarSysArray[0]+'Age')} an${eval(solarSysArray[0]+'Age') > 1? 's' : ''}.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>${solarSysArray[1]}</span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                    ${(index+1) % 4 == 0? '</div>' : ''}`
-                    );
-                    console.log(index % 4 == 0? 'row': 'pas row');
-                    console.log((index+1) % 4 == 0 ? 'fin row' : 'no fin row');
+                    ${(index+1) % 4 == 0? '</div>' : ''}`;
                 });
 
+                $('#resultSolarSys').append(html);
             }else{
                 alert(`La date doit être antérieur à aujourd'hui`);
             }
