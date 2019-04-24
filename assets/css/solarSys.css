@@ -1,3 +1,35 @@
+#datepicker{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background: url(../images/sun.png);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+    opacity: 1 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff;
+    opacity: 1 !important;
+}
+
+:-ms-input-placeholder {  
+   color: #ffffff;
+}
 
 .card{
     border: 50px transparent solid;

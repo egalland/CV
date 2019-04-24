@@ -67,7 +67,7 @@ $(() =>{
 
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
-        selectYears: 80, 
+        selectYears: 200, 
         closeOnSelect: false, // Close upon selecting a date,
         container: undefined, // ex. 'body' will append picker to body
         labelMonthNext: 'Mois suivant',
@@ -79,7 +79,7 @@ $(() =>{
         weekdaysFull: [ 'Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi' ],
         weekdaysShort: [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ],
         weekdaysLetter: [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S' ],
-        today: 'Aujourd\'hui',
+        today: false,
         clear: 'Réinitialiser',
         close: 'Fermer',
         format: 'dd/mm/yyyy'
