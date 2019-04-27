@@ -1,12 +1,12 @@
 @keyframes rotationWord{
 	from {
 		transform: rotate(0deg)
-		           translate(160px)
+		           translate(140px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(160px) 
+		           translate(140px) 
 		           rotate(-360deg);
 	}
 }
@@ -14,12 +14,12 @@
 @keyframes rotationWord2{
 	from {
 		transform: rotate(0deg)
-		           translate(280px)
+		           translate(220px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(280px) 
+		           translate(220px) 
 		           rotate(-360deg);
 	}
 }
@@ -27,12 +27,12 @@
 @keyframes rotationWord3{
 	from {
 		transform: rotate(0deg)
-		           translate(400px)
+		           translate(300px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(400px) 
+		           translate(300px) 
 		           rotate(-360deg);
 	}
 }
@@ -40,72 +40,72 @@
 @keyframes rotationWord4{
 	from {
 		transform: rotate(0deg)
-		           translate(520px)
+		           translate(380px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(520px) 
+		           translate(380px) 
 		           rotate(-360deg);
 	}
 }
 @keyframes rotationWord5{
 	from {
 		transform: rotate(0deg)
-		           translate(660px)
+		           translate(460px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(660px) 
+		           translate(460px) 
 		           rotate(-360deg);
 	}
 }
 @keyframes rotationWord6{
 	from {
 		transform: rotate(0deg)
-		           translate(760px)
+		           translate(540px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(760px) 
+		           translate(540px) 
 		           rotate(-360deg);
 	}
 }
 @keyframes rotationWord7{
 	from {
 		transform: rotate(0deg)
-		           translate(760px)
+		           translate(620px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(760px) 
+		           translate(620px) 
 		           rotate(-360deg);
 	}
 }
 @keyframes rotationWord8{
 	from {
 		transform: rotate(0deg)
-		           translate(760px)
+		           translate(700px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(760px) 
+		           translate(700px) 
 		           rotate(-360deg);
 	}
 
 }@keyframes rotationWord9{
 	from {
 		transform: rotate(0deg)
-		           translate(760px)
+		           translate(780px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(760px) 
+		           translate(780px) 
 		           rotate(-360deg);
 	}
 }
@@ -237,110 +237,113 @@ body{
   cursor: not-allowed;
 }
 
-
-
-
 #skills{
-  padding: 50%;
-  color: white;
-  cursor: default;
-  background-image: url('../images/space.jpg');
-  background-size: contain;
   text-align: center;
 }
 
-.sun{
-  margin-left: -40px;
-  background-image: url('../images/sun.png');
-  padding-top: 90px;
-  font-weight: 700;
-  font-size: 1.5rem;
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-  text-transform: uppercase;
-}
+@media screen and (min-width: 1600px){
 
-.sun:hover{
-  animation: vibrate-1 0.3s linear infinite;
-}
+  #skills{
+    padding: 50%;
+    color: white;
+    cursor: default;
+    background-image: url('../images/space.jpg');
+    background-size: contain;
+    transform: scale(0.8,0.8);
+  }
 
-#skills h4{
-  position: absolute;
-  margin-left: 0px;
-  margin-top: -150px;
-  padding-top: 40px;
-  width: 7rem;
-  height: 7rem;
-  background-size: cover;
-}
+  .sun{
+    margin-left: -40px;
+    background-image: url('../images/sun.png');
+    padding-top: 90px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    text-transform: uppercase;
+  }
 
-.mercury{
-  animation: rotationWord 7s infinite linear;
-  background-image: url('../images/mercury.png');
-  animation-delay: -2s;
-}
-.venus{
-  animation: rotationWord2 19s infinite linear;
-  background-image: url('../images/venus.png');
-  animation-delay: -12s;
-}
+  .sun:hover{
+    animation: vibrate-1 0.3s linear infinite;
+  }
 
-.earth{
-  animation: rotationWord3 30s infinite linear;
-  background-image: url('../images/earth.png');
-  animation-delay: -50s;
+  #skills h4{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -150px;
+    padding-top: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
-}
-.mars{
-  animation: rotationWord4 56s infinite linear;
-  background-image: url('../images/mars.png');
-  animation-delay: -23s;
-}
-.belt{
-  animation: rotationWord5 26s infinite linear;
-  background-image: url('../images/asteroide.png');
-  animation-delay: -23s;
-  padding-top: 25px !important;
-  width: 7rem !important;
-  height: 5rem !important;
-}
-[class~='belt']:nth-last-of-type(2){
-  animation: rotationWord5 150s infinite linear;
-  animation-delay: -90s;
-}
-[class~='belt']:nth-last-of-type(3){
-  animation: rotationWord5 59s infinite linear;
-  animation-delay: -9s;
-}
-[class~='belt']:nth-last-of-type(4){
-  animation: rotationWord5 80s infinite linear;
-  animation-delay: -30s;
-}
-[class~='belt']:nth-last-of-type(5){
-  animation: rotationWord5 110s infinite linear;
-  animation-delay: -56s;
-}
-.jupiter{
-  animation: rotationWord6 200s infinite linear;
-  background-image: url('../images/jupiter.png');
-  animation-delay: -400s;
-}
-.saturne{
-  animation: rotationWord7 110s infinite linear;
-  background-image: url('../images/saturne.png');
-  animation-delay: -400s;
-  padding-top: 25px !important;
-  width: 10rem !important;
-  height: 5rem !important;
-}
-.uranus{
-  animation: rotationWord8 160s infinite linear;
-  background-image: url('../images/uranus.png');
-  animation-delay: -400s;
-}
-.neptune{
-  animation: rotationWord9 20s infinite linear;
-  background-image: url('../images/neptune.png');
-  animation-delay: -400s;
+  .mercury{
+    animation: rotationWord 7s infinite linear;
+    background-image: url('../images/mercury.png');
+    animation-delay: -2s;
+  }
+  .venus{
+    animation: rotationWord2 19s infinite linear;
+    background-image: url('../images/venus.png');
+    animation-delay: -12s;
+  }
+
+  .earth{
+    animation: rotationWord3 30s infinite linear;
+    background-image: url('../images/earth.png');
+    animation-delay: -50s;
+
+  }
+  .mars{
+    animation: rotationWord4 56s infinite linear;
+    background-image: url('../images/mars.png');
+    animation-delay: -23s;
+  }
+  .belt{
+    animation: rotationWord5 26s infinite linear;
+    background-image: url('../images/asteroide.png');
+    animation-delay: -23s;
+    width: 7rem !important;
+  }
+  [class~='belt']:nth-last-of-type(2){
+    animation: rotationWord5 150s infinite linear;
+    animation-delay: -90s;
+  }
+  [class~='belt']:nth-last-of-type(3){
+    animation: rotationWord5 59s infinite linear;
+    animation-delay: -9s;
+  }
+  [class~='belt']:nth-last-of-type(4){
+    animation: rotationWord5 80s infinite linear;
+    animation-delay: -30s;
+  }
+  [class~='belt']:nth-last-of-type(5){
+    animation: rotationWord5 110s infinite linear;
+    animation-delay: -56s;
+  }
+  .jupiter{
+    animation: rotationWord6 200s infinite linear;
+    background-image: url('../images/jupiter.png');
+    animation-delay: -400s;
+  }
+  .saturne{
+    animation: rotationWord7 110s infinite linear;
+    background-image: url('../images/saturne.png');
+    animation-delay: -400s;
+    width: 10rem !important;
+    height: 5rem !important;
+  }
+  .uranus{
+    animation: rotationWord8 160s infinite linear;
+    background-image: url('../images/uranus.png');
+    animation-delay: -400s;
+  }
+  .neptune{
+    animation: rotationWord9 20s infinite linear;
+    background-image: url('../images/neptune.png');
+    animation-delay: -400s;
+  }
 }

@@ -1,3 +1,17 @@
+body{
+    background: url('../images/wppSolarSys.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 4px; 
+}
+label{
+    font-size: 1rem !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+
+}
 #datepicker{
     width: 120px;
     height: 120px;
@@ -10,7 +24,7 @@
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 ::-webkit-input-placeholder {
     color: #ffffff;
@@ -29,10 +43,10 @@
 
 :-ms-input-placeholder {  
    color: #ffffff;
+   opacity: 1 !important;
 }
-
-.card{
-    border: 50px transparent solid;
+.waves-input-wrapper{
+    vertical-align: middle !important;
 }
 .card-image{
     height: 400px;

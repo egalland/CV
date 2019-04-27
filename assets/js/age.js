@@ -35,17 +35,19 @@ $(() =>{
 
                     html += 
                     `${index % 4 == 0? '<div class="row">' : ''}
-                        <div class="card col s12 m6 l3">
-                            <div class="card-image waves-effect waves-block waves-light medium">
-                                <img class="activator" src="assets/images/${solarSysArray[0]}_full.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">${solarSysArray[1]}<i class="material-icons right">more_vert</i></span>
-                                <p>Votre âge sur ${solarSysArray[1]} est de ${eval(solarSysArray[0]+'Age')} an${eval(solarSysArray[0]+'Age') > 1? 's' : ''}.</p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>${solarSysArray[1]}</span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light medium">
+                                    <img class="activator" src="assets/images/${solarSysArray[0]}_full.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">${solarSysArray[1]}<i class="material-icons right">more_vert</i></span>
+                                    <p>Votre âge sur ${solarSysArray[1]} est de ${eval(solarSysArray[0]+'Age')} an${eval(solarSysArray[0]+'Age') > 1? 's' : ''}.</p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>${solarSysArray[1]}</span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
                             </div>
                         </div>
                     ${(index+1) % 4 == 0? '</div>' : ''}`;
@@ -56,9 +58,8 @@ $(() =>{
                 alert(`La date doit être antérieur à aujourd'hui`);
             }
         }else{
-            alert('ALERTE GENERALE');
+            alert('Veuillez sélectionner une date');
         }
-
     });
 
     $('.datepicker').on('mousedown',function(event){
