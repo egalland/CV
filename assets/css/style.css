@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+#about{
+
+  background: rgba(255,255,255,.3);
+  border-radius:5px;
+  border:1px solid rgba(255,255,255,.3);
+  text-shadow:0 1px 1px rgba(0,0,0,.4);
+}
+.logoName{
+  font-family: 'Audiowide', cursive;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.logo{
+  grid-column: 1;
+  grid-row: 1;
+  height: 200px;
+  object-fit: contain;
+  margin-left: auto; 
+  margin-right: 0; 
+}
+#about h1{
+  grid-column: 2 / 4;
+  grid-row: 1;
+  font-size: 80px;
+}
+#about h2{
+  font-family: 'Audiowide', cursive;
+
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
 @keyframes rotationWord{
 	from {
 		transform: rotate(0deg)
