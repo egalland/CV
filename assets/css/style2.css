@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+h1{
+    font-family: 'Audiowide', cursive;
+}
+
+.frontend{
+    background: linear-gradient(to right, red, purple);
+    padding-bottom: 3px;
+}
+
+#skills ul{
+    margin: 0;
+}
+
+#skills i:hover{
+    animation: rotation 10s infinite linear;
+}

@@ -1,5 +1,5 @@
 $(function(){
-  $('#startPageCarousel').carousel({
+  $('#project').carousel({
     interval : false
   });
     var progressPercent = 0;
@@ -7,8 +7,8 @@ $(function(){
       setInterval(function(){
         if(progressPercent > (100 - progressPercentIncrementation)){
           progressPercent = 0;
-          $('#startPageCarousel').carousel('next');
-        }else if(($('#startPageCarousel')).is(':hover')){
+          $('#project').carousel('next');
+        }else if(($('#project')).is(':hover')){
           progressPercent = progressPercent;
         }else{
         progressPercent += progressPercentIncrementation;
@@ -19,18 +19,18 @@ $(function(){
   $('.carousel-indicators li').click(function(){
     var indicator = $(this).attr('class');
     if(indicator.length <= 5){
-      $('#startPageCarousel').carousel(indicator[4]-1);
+      $('#project').carousel(indicator[4]-1);
       $('.progressBar').width(0);
     }
   });
 
   $('.carousel-control-prev').click(function(){
-    $('#startPageCarousel').carousel('prev');
+    $('#project').carousel('prev');
     progressPercent = 0;
     $('.progressBar').width(0);
   });
   $('.carousel-control-next').click(function(){
-    $('#startPageCarousel').carousel('next');
+    $('#project').carousel('next');
     progressPercent = 0;
     $('.progressBar').width(0);
   });
