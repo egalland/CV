@@ -45,7 +45,9 @@
         transform: scale(.75, .75) rotate(-3deg);
     }
 }
-
+html{ 
+    font-size: 10px; 
+}
 body{
     padding: 0;
     margin: 0;
@@ -74,7 +76,7 @@ nav ul li a {
 #contact form{
     background-color: rgb(255, 255, 255);
     border: rgb(22, 22, 22) solid 2px;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 #header{
     display: flex;
@@ -84,14 +86,17 @@ nav ul li a {
 }
 
 #header img{
-height: 200px;
+height: 20vh;
 object-fit: contain;
 }
 
-#header h1 {
-font-size: 80px;
-font-family: 'Audiowide', cursive;
+h1{
+font-size: 6rem;
 animation: text-pop-up-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+h1, h2, nav{
+    font-family: 'Audiowide', cursive;
 }
 
 nav{
@@ -104,17 +109,17 @@ nav{
 
 #frontend{
     background: linear-gradient(to right, red, purple);
-    padding-bottom: 3px;
+    padding-bottom: 0.3rem;
 }
 
 #backend{
     background: linear-gradient(to right, purple, yellow);
-    padding-bottom: 3px;
+    padding-bottom: 0.3rem;
 }
 
 #others{
     background: linear-gradient(to right, yellow, lightblue);
-    padding-bottom: 3px;
+    padding-bottom: 0.3rem;
 }
 
 h3{
@@ -122,6 +127,10 @@ h3{
 }
 #skills ul{
     margin: 0;
+}
+
+#skills .col{
+    padding-bottom: 1rem;
 }
 
 #skills i:hover{
@@ -138,12 +147,12 @@ h3{
 }
 
 .parallax-container{
-    height: 200px;
+    height: 20rem;
 }
 section{
-    padding: 50px 0;
+    padding: 5rem 0;
 }
 
 #contact form{
-    padding: 10px
+    padding: 1rem;
 }
