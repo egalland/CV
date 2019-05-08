@@ -1,376 +1,149 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
-#about {
-  background: rgba(255, 255, 255, .3);
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, .3);
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.logoName {
-  font-family: 'Audiowide', cursive;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+@keyframes text-pop-up-left {
+    0% {
+        transform: translateX(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translate(20px, -20px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
 }
 
-.logo {
-  grid-column: 1;
-  grid-row: 1;
-  height: 200px;
-  object-fit: contain;
-  margin-left: auto;
-  margin-right: 0;
+@keyframes tracking-in-contract-bck-bottom {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px) translateY(300px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
 }
 
-#about h1 {
-  grid-column: 2 / 4;
-  grid-row: 1;
-  font-size: 80px;
+@keyframes big-little {
+    25% {
+        transform: scale(1.5, 1.5) rotate(3deg);
+    }
+    75% {
+        transform: scale(.75, .75) rotate(-3deg);
+    }
 }
 
-#about h2 {
-  font-family: 'Audiowide', cursive;
-
-  font-size: 16px;
-  font-style: italic;
-  text-align: center;
+body{
+    padding: 0;
+    margin: 0;
+    background: url('../images/greywall.jpg') -25px -50px;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    float: none;
+}
+nav ul li a {
+    display: inline-block;
 }
 
-@keyframes rotationWord {
-  from {
-    transform: rotate(0deg) translate(140px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(140px) rotate(-360deg);
-  }
+#home .container,
+#contact form{
+    background-color: rgb(255, 255, 255);
+    border: rgb(22, 22, 22) solid 2px;
+    border-radius: 5px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-@keyframes rotationWord2 {
-  from {
-    transform: rotate(0deg) translate(220px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(220px) rotate(-360deg);
-  }
+#header img{
+height: 200px;
+object-fit: contain;
 }
 
-@keyframes rotationWord3 {
-  from {
-    transform: rotate(0deg) translate(300px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(300px) rotate(-360deg);
-  }
+#header h1 {
+font-size: 80px;
+font-family: 'Audiowide', cursive;
+animation: text-pop-up-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes rotationWord4 {
-  from {
-    transform: rotate(0deg) translate(380px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(380px) rotate(-360deg);
-  }
+nav{
+    background-color: rgba(0, 0, 0, 0.507) !important;
+}
+#home{
+    min-height: 100vh;
 }
 
-@keyframes rotationWord5 {
-  from {
-    transform: rotate(0deg) translate(460px) rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg) translate(460px) rotate(-360deg);
-  }
+#frontend{
+    background: linear-gradient(to right, red, purple);
+    padding-bottom: 3px;
 }
 
-@keyframes rotationWord6 {
-  from {
-    transform: rotate(0deg) translate(540px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(540px) rotate(-360deg);
-  }
+#backend{
+    background: linear-gradient(to right, purple, yellow);
+    padding-bottom: 3px;
 }
 
-@keyframes rotationWord7 {
-  from {
-    transform: rotate(0deg) translate(620px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(620px) rotate(-360deg);
-  }
+#others{
+    background: linear-gradient(to right, yellow, lightblue);
+    padding-bottom: 3px;
 }
 
-@keyframes rotationWord8 {
-  from {
-    transform: rotate(0deg) translate(700px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(700px) rotate(-360deg);
-  }
-
+h3{
+    margin-top: 0;
+}
+#skills ul{
+    margin: 0;
 }
 
-@keyframes rotationWord9 {
-  from {
-    transform: rotate(0deg) translate(780px) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate(780px) rotate(-360deg);
-  }
+#skills i:hover{
+    animation: big-little 1s infinite linear;
+    cursor: pointer;
 }
 
-@keyframes shadow-pop-tr {
-  0% {
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    transform: translateX(0) translateY(0);
-  }
-
-  100% {
-    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-    transform: translateX(-8px) translateY(8px);
-  }
+.collapsible-body{
+    background-color: #fff;
 }
 
-@keyframes vibrate-1 {
-  0% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translate(-2px, 2px);
-  }
-
-  40% {
-    transform: translate(-2px, -2px);
-  }
-
-  60% {
-    transform: translate(2px, 2px);
-  }
-
-  80% {
-    transform: translate(2px, -2px);
-  }
-
-  100% {
-    transform: translate(0);
-  }
+#portfolio .row{
+    margin: 0;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background: url('../images/adventure-astro-astrophotography-1009136.jpg') -25px -50px;
-  top: 0;
-  width: 100%;
-  z-index: 0;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#project,
-#skills {
-  background: rgba(255, 255, 255, .3);
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, .3);
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-}
-
-.carousel-item {
-  height: 80vh;
-}
-
-.imageCarousel {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-}
-
-.carousel-indicators {
-  z-index: 2000;
-  position: relative;
-  top: 10px;
-}
-
-.carousel-indicators li {
-  height: 6px;
-  padding: 0 7%;
-}
-
-.progressBar {
-  height: 10px;
-  width: 100%;
-  margin: -8px 0 0 0;
-  border: none;
-  z-index: 1;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 3px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  z-index: 101;
-  padding-top: 60vh;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  transition: 0.5s;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  transform: scale(1.4, 1.4);
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.carousel-caption {
-  z-index: 1001;
-}
-
-.githubButton {
-  border-width: 3px;
-  font-weight: 800;
-}
-
-.disabled {
-  cursor: not-allowed;
-}
-
-#skills {
-  text-align: center;
-}
-
-@media screen and (min-width: 1600px) {
-
-  #skills {
-    padding: 50%;
-    color: white;
-    cursor: default;
-    background-image: url('../images/space.jpg');
-    background-size: contain;
-    transform: scale(0.8, 0.8);
-  }
-
-  .sun {
-    margin-left: -40px;
-    background-image: url('../images/sun.png');
-    padding-top: 90px;
-    font-weight: 700;
-    font-size: 1.5rem;
+.parallax-container{
     height: 200px;
-    width: 200px;
-    background-size: cover;
-    text-transform: uppercase;
-  }
+}
+section{
+    padding: 50px 0;
+}
 
-  .sun:hover {
-    animation: vibrate-1 0.3s linear infinite;
-  }
-
-  #skills h4 {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: -150px;
-    padding-top: 1.5rem;
-    width: 4rem;
-    height: 4rem;
-    background-size: cover;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  .mercury {
-    animation: rotationWord 7s infinite linear;
-    background-image: url('../images/mercury.png');
-    animation-delay: -2s;
-  }
-
-  .venus {
-    animation: rotationWord2 19s infinite linear;
-    background-image: url('../images/venus.png');
-    animation-delay: -12s;
-  }
-
-  .earth {
-    animation: rotationWord3 30s infinite linear;
-    background-image: url('../images/earth.png');
-    animation-delay: -50s;
-
-  }
-
-  .mars {
-    animation: rotationWord4 56s infinite linear;
-    background-image: url('../images/mars.png');
-    animation-delay: -23s;
-  }
-
-  .belt {
-    animation: rotationWord5 26s infinite linear;
-    background-image: url('../images/asteroide.png');
-    animation-delay: -23s;
-    width: 7rem !important;
-  }
-
-  [class~='belt']:nth-last-of-type(2) {
-    animation: rotationWord5 150s infinite linear;
-    animation-delay: -90s;
-  }
-
-  [class~='belt']:nth-last-of-type(3) {
-    animation: rotationWord5 59s infinite linear;
-    animation-delay: -9s;
-  }
-
-  [class~='belt']:nth-last-of-type(4) {
-    animation: rotationWord5 80s infinite linear;
-    animation-delay: -30s;
-  }
-
-  [class~='belt']:nth-last-of-type(5) {
-    animation: rotationWord5 110s infinite linear;
-    animation-delay: -56s;
-  }
-
-  .jupiter {
-    animation: rotationWord6 200s infinite linear;
-    background-image: url('../images/jupiter.png');
-    animation-delay: -400s;
-  }
-
-  .saturne {
-    animation: rotationWord7 110s infinite linear;
-    background-image: url('../images/saturne.png');
-    animation-delay: -400s;
-    width: 10rem !important;
-    height: 5rem !important;
-  }
-
-  .uranus {
-    animation: rotationWord8 160s infinite linear;
-    background-image: url('../images/uranus.png');
-    animation-delay: -400s;
-  }
-
-  .neptune {
-    animation: rotationWord9 20s infinite linear;
-    background-image: url('../images/neptune.png');
-    animation-delay: -400s;
-  }
+#contact form{
+    padding: 10px
 }

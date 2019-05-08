@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+#about {
+  background: rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, .3);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+
+.logoName {
+  font-family: 'Audiowide', cursive;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  height: 200px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#about h1 {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  font-size: 80px;
+}
+
+#about h2 {
+  font-family: 'Audiowide', cursive;
+
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes rotationWord {
+  from {
+    transform: rotate(0deg) translate(140px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(140px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord2 {
+  from {
+    transform: rotate(0deg) translate(220px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(220px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord3 {
+  from {
+    transform: rotate(0deg) translate(300px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(300px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord4 {
+  from {
+    transform: rotate(0deg) translate(380px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(380px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord5 {
+  from {
+    transform: rotate(0deg) translate(460px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(460px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord6 {
+  from {
+    transform: rotate(0deg) translate(540px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(540px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord7 {
+  from {
+    transform: rotate(0deg) translate(620px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(620px) rotate(-360deg);
+  }
+}
+
+@keyframes rotationWord8 {
+  from {
+    transform: rotate(0deg) translate(700px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(700px) rotate(-360deg);
+  }
+
+}
+
+@keyframes rotationWord9 {
+  from {
+    transform: rotate(0deg) translate(780px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(780px) rotate(-360deg);
+  }
+}
+
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url('../images/adventure-astro-astrophotography-1009136.jpg') -25px -50px;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#project,
+#skills {
+  background: rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, .3);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+}
+
+.carousel-item {
+  height: 80vh;
+}
+
+.imageCarousel {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  z-index: 2000;
+  position: relative;
+  top: 10px;
+}
+
+.carousel-indicators li {
+  height: 6px;
+  padding: 0 7%;
+}
+
+.progressBar {
+  height: 10px;
+  width: 100%;
+  margin: -8px 0 0 0;
+  border: none;
+  z-index: 1;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 101;
+  padding-top: 60vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  transition: 0.5s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  transform: scale(1.4, 1.4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.carousel-caption {
+  z-index: 1001;
+}
+
+.githubButton {
+  border-width: 3px;
+  font-weight: 800;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+#skills {
+  text-align: center;
+}
+
+@media screen and (min-width: 1600px) {
+
+  #skills {
+    padding: 50%;
+    color: white;
+    cursor: default;
+    background-image: url('../images/space.jpg');
+    background-size: contain;
+    transform: scale(0.8, 0.8);
+  }
+
+  .sun {
+    margin-left: -40px;
+    background-image: url('../images/sun.png');
+    padding-top: 90px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    text-transform: uppercase;
+  }
+
+  .sun:hover {
+    animation: vibrate-1 0.3s linear infinite;
+  }
+
+  #skills h4 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -150px;
+    padding-top: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .mercury {
+    animation: rotationWord 7s infinite linear;
+    background-image: url('../images/mercury.png');
+    animation-delay: -2s;
+  }
+
+  .venus {
+    animation: rotationWord2 19s infinite linear;
+    background-image: url('../images/venus.png');
+    animation-delay: -12s;
+  }
+
+  .earth {
+    animation: rotationWord3 30s infinite linear;
+    background-image: url('../images/earth.png');
+    animation-delay: -50s;
+
+  }
+
+  .mars {
+    animation: rotationWord4 56s infinite linear;
+    background-image: url('../images/mars.png');
+    animation-delay: -23s;
+  }
+
+  .belt {
+    animation: rotationWord5 26s infinite linear;
+    background-image: url('../images/asteroide.png');
+    animation-delay: -23s;
+    width: 7rem !important;
+  }
+
+  [class~='belt']:nth-last-of-type(2) {
+    animation: rotationWord5 150s infinite linear;
+    animation-delay: -90s;
+  }
+
+  [class~='belt']:nth-last-of-type(3) {
+    animation: rotationWord5 59s infinite linear;
+    animation-delay: -9s;
+  }
+
+  [class~='belt']:nth-last-of-type(4) {
+    animation: rotationWord5 80s infinite linear;
+    animation-delay: -30s;
+  }
+
+  [class~='belt']:nth-last-of-type(5) {
+    animation: rotationWord5 110s infinite linear;
+    animation-delay: -56s;
+  }
+
+  .jupiter {
+    animation: rotationWord6 200s infinite linear;
+    background-image: url('../images/jupiter.png');
+    animation-delay: -400s;
+  }
+
+  .saturne {
+    animation: rotationWord7 110s infinite linear;
+    background-image: url('../images/saturne.png');
+    animation-delay: -400s;
+    width: 10rem !important;
+    height: 5rem !important;
+  }
+
+  .uranus {
+    animation: rotationWord8 160s infinite linear;
+    background-image: url('../images/uranus.png');
+    animation-delay: -400s;
+  }
+
+  .neptune {
+    animation: rotationWord9 20s infinite linear;
+    background-image: url('../images/neptune.png');
+    animation-delay: -400s;
+  }
+}
