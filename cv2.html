@@ -11,24 +11,39 @@
 </head>
 
 <body>
-
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">Components</a></li>
+                    <li><a href="#home">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <main>
-        <h1 class="center-align">
-            <span class="red-text darken-4">E</span>mmanuel<br />
-            <span class="blue-text darken-1">G</span>alland
-        </h1>
+        <section id="home" class="center-align">
+            <div class="container">
+                <div id="header">
+                    <img src="assets/images/logorobot2.png" alt="logo" />
+                    <h1>
+                        <span class="blue-text darken-2">E</span>mmanuel<br />
+                        <span class="red-text darken-4">G</span>alland
+                    </h1>
+                </div>
+                <p>"citation"</p>
+                <p>blablablablabla</p>
+                <div>
+                    <a href="https://github.com/egalland" target="_blank" title="Lien vers Github"><i class="material-icons"></i> Github</a>
+                    <a href="callto:0658902164" title="Numéro de téléphone"><i class="material-icons"></i>06 58 90 21 64</a>
+                    <a href="mailto:emmanuel.galland117@gmail.com" title="Adresse e-mail"><i class="material-icons">mail</i>emmanuel.galland117@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/emmanuel-galland-63a467166/" title="LinkedIn"><i class="material-icons"></i>LinkedIn</a>
+                </div>
+            </div>
+        </section>
         <section id="projects" class="container">
-            <ul id="projects" class="collapsible popout" data-collapsible="accordion">
+            <ul class="collapsible popout" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header"><i class="material-icons">videogame_asset</i>Ludum Dare 44</div>
                     <div class="collapsible-body row">
@@ -69,18 +84,20 @@
                 </li>
             </ul>
         </section>
+
         <div class="parallax-container">
-                <div class="parallax"><img src="assets/images/iceland.jpg"></div>
-              </div>
-              <div class="section white">
-                <div class="row container">
-                  <h2 class="header">Parallax</h2>
-                  <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                </div>
-              </div>
-              <div class="parallax-container">
-                <div class="parallax"><img src="assets/images/forest.jpg"></div>
-              </div>
+            <div class="parallax"><img src="assets/images/iceland.jpg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">Parallax</h2>
+                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="assets/images/forest.jpg"></div>
+        </div>
+            
         <section id="skills" class="row container">
             <div class="col s12 m4">
                 <div class="frontend z-depth-1">
@@ -121,8 +138,8 @@
 
 
 </body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
 <script src="assets/js/script.js"></script>
 
 </html>

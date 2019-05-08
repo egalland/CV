@@ -16,7 +16,7 @@
         text-shadow: none;
     }
     100% {
-        transform: translateX(-50px);
+        transform: translate(20px, -20px);
         transform-origin: 50% 50%;
         text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
@@ -45,10 +45,11 @@
         transform: scale(.75, .75) rotate(-3deg);
     }
 }
-/*body{
+
+body{
     padding: 0;
     margin: 0;
-    background: url('../images/adventure-astro-astrophotography-1009136.jpg') -25px -50px;
+    background: url('../images/greywall.jpg') -25px -50px;
     top: 0;
     width: 100%;
     z-index: 0;
@@ -57,16 +58,48 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}*/
-
-h1{
-    font-family: 'Audiowide', cursive;
-    animation: text-pop-up-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    float: none;
+}
+nav ul li a {
+    display: inline-block;
+}
+#home .container{
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.521);
+    border: white solid 1px;
+    border-radius: 5px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-#projects{
-    animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+#header img{
+height: 200px;
+object-fit: contain;
 }
+
+#header h1 {
+font-size: 80px;
+font-family: 'Audiowide', cursive;
+animation: text-pop-up-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.507) !important;
+}
+#home{
+    min-height: 100vh;
+}
+
 
 .frontend{
     background: linear-gradient(to right, red, purple);
