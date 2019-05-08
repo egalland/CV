@@ -1,6 +1,7 @@
 $(()=> {
     $('.parallax').parallax();
     $('.collapsible').collapsible();
+    $('.button-collapse').sideNav();
     
     var options = [
       {

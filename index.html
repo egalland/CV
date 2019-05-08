@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +15,14 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
+                <a href="#" data-activates="mobileNav" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobileNav">
                     <li><a href="#home">Accueil</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -28,24 +36,32 @@
             <div class="container">
                 <div id="header">
                     <img src="assets/images/logorobot2.png" alt="logo" />
-                    <h1>
+                    <h1 class="left-align">
                         <span class="blue-text darken-2">E</span>mmanuel<br />
                         <span class="red-text darken-4">G</span>alland
                     </h1>
                 </div>
-                <p>"citation"</p>
-                <p>blablablablabla</p>
-                <div>
-                    <a href="https://github.com/egalland" target="_blank" title="Lien vers Github"><i class="material-icons"></i> Github</a>
-                    <a href="callto:0658902164" title="Numéro de téléphone"><i class="material-icons"></i>06 58 90 21 64</a>
-                    <a href="mailto:emmanuel.galland117@gmail.com" title="Adresse e-mail"><i class="material-icons">mail</i>emmanuel.galland117@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/emmanuel-galland-63a467166/" title="LinkedIn"><i class="material-icons"></i>LinkedIn</a>
+                <h4>"Je suis spécialiste de rien et je connais un petit peu tout"</h4>
+                <p>Développeur Web recherchant une alternance pour le titre de Concepteur Développeur d'Application</p>
+                <div class="row" id="links">
+                    <div class="col m3 s12">
+                        <a href="https://github.com/egalland" target="_blank" title="Lien vers Github" class="row"><i class="col s12 fab fa-github"></i><span class="col s12">Github</span></a>
+                    </div>
+                    <div class="col m3 s12">
+                        <a href="callto:0658902164" title="Numéro de téléphone" class="row"><i class="material-icons col s12">phone</i><span class="col s12">06 58 90 21 64</span></a>
+                    </div>
+                    <div class="col m3 s12">
+                        <a href="mailto:emmanuel.galland117@gmail.com" title="Adresse e-mail" class="row"><i class="material-icons col s12">mail</i><span class="col s12">emmanuel.galland117@gmail.com</span></a>
+                    </div>
+                    <div class="col m3 s12">
+                        <a href="https://www.linkedin.com/in/emmanuel-galland-63a467166/" title="LinkedIn" class="row"><i class="fab fa-linkedin col s12"></i><span class="col s12">LinkedIn</span></a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <div class="parallax-container">
-            <div class="parallax"><img src="assets/images/iceland.jpg"></div>
+            <div class="parallax"><img src="assets/images/issearth.JPG"></div>
         </div>
 
         <section id="skills" class="row container">
@@ -75,7 +91,7 @@
             <div class="col s12 m4">
                 <div id="others" class="z-depth-1 hoverable">
                     <div class="white center-align">
-                        <i class="material-icons">settings</i>
+                        <i class="material-icons">add_circle</i>
                         <h3>Autres</h3>
                         <ul>
                             <li>Maquettage / Prototypage (Adobe Xd)</li>
@@ -89,20 +105,20 @@
             <h2 class="center-align white-text">PORTFOLIO</h2>
             <ul class="collapsible popout" data-collapsible="accordion">
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">videogame_asset</i>Ludum Dare 44</div>
+                    <div class="collapsible-header active"><i class="material-icons">videogame_asset</i>Toy Store - Ludum Dare 44</div>
                     <div class="collapsible-body row">
                         <img class="responsive-img col s6" src="assets/images/toystore.png" />
                         <div class="col s6">
                             <p>
-                                Réalisation d'un jeu en équipe pour la Ludum Dare 44 en équipe sur 72h avec le thème "Votre
-                                vie est la monnaie".
+                                Réalisation d'un jeu en équipe pour la Ludum Dare 44 en équipe de 2 personnes sur 72h avec le thème <span class="italic">"Votre
+                                vie est la monnaie" (Your life is currency)</span>.<br />
                                 Nous avons donc utilisé la tirelire de toy story pour respecter le thème et celà nous permet
                                 aussi d'avoir un dino laser.
                                 Le jeu tourne sur Unity, un build webGL afin de faciliter les gens à tester et noter le jeu.
                                 La note du jeu arrive le 22 mai 2019.
                             </p>
                             <div class="center-align">
-                                <a href="https://ldjam.com/events/ludum-dare/44/toy-store">
+                                <a href="https://ldjam.com/events/ludum-dare/44/toy-store" target="_blank">
                                     <button class="waves-effect waves-red btn-large black">Voir sur Ludum Dare</button>
                                 </a>
                             </div>
@@ -110,21 +126,94 @@
                     </div>
                 </li>
                 <li>
-                    <div class="collapsible-header active"><i class="material-icons">videogame_asset</i>Ludum Dare 44</div>
+                    <div class="collapsible-header"><i class="material-icons">web</i>Pills - Site Web</div>
                     <div class="collapsible-body row">
-                        <img class="responsive-img col s6" src="assets/images/toystore.png" />
+                        <img class="responsive-img col s6" src="assets/images/projetproe2n.jpg" />
                         <div class="col s6">
                             <p>
-                                Réalisation d'un jeu en équipe pour la Ludum Dare 44 en équipe sur 72h avec le thème "Votre
-                                vie est la monnaie".
-                                Nous avons donc utilisé la tirelire de toy story pour respecter le thème et celà nous permet
-                                aussi d'avoir un dino laser.
-                                Le jeu tourne sur Unity, un build webGL afin de faciliter les gens à tester et noter le jeu.
-                                La note du jeu arrive le 22 mai 2019.
+                                Réalisation d'un site de critiques pour toutes les oeuvres culturelles.
                             </p>
-                            <a href="https://ldjam.com/events/ludum-dare/44/toy-store">
-                                <button class="waves-effect waves-red btn-large black">Voir sur Ludum Dare</button>
-                            </a>
+                            <div class="center-align">
+                                <a href="https://github.com/hidden-pill/pills" target="_blank">
+                                    <button class="waves-effect waves-red btn-large black">Voir sur Github</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">group</i>Can'thon - Hackathon intercampus</div>
+                    <div class="collapsible-body row">
+                        <img class="responsive-img col s6" src="assets/images/canthonall.jpg" />
+                        <div class="col s6">
+                            <p>
+                                Création, organisation et participation d'un hackthon intercampus au sein de La-Manu.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">videogame_asset</i>Storage War - Ludum Dare 42</div>
+                    <div class="collapsible-body row">
+                        <img class="responsive-img col s6" src="assets/images/storageWar.jpg" />
+                        <div class="col s6">
+                            <p>
+                                Réalisation d'un jeu en équipe pour la Ludum Dare 42 en équipe de 3 personnes sur 72h avec le thème <span class="italic">"À court d'espace" (Running out of space)</span>. <br />
+                                Classement 710 / 3070
+                            </p>
+                            <div class="center-align">
+                                <a href="https://ldjam.com/events/ludum-dare/44/toy-store" target="_blank">
+                                    <button class="waves-effect waves-red btn-large black">Voir sur Ludum Dare</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">web</i>Site e-commerce AngularJS</div>
+                    <div class="collapsible-body row">
+                        <img class="responsive-img col s6" src="assets/images/ecoAngularJs.png" />
+                        <div class="col s6">
+                            <p>
+                                Réalisation d'un jeu en équipe pour la Ludum Dare 42 en équipe sur 72h avec le thème <span class="italic">"À court d'espace" (Running out of space)</span>. <br />
+                            </p>
+                            <div class="center-align">
+                                <a href="https://github.com/hidden-pill/pills" target="_blank">
+                                    <button class="waves-effect waves-red btn-large black">Voir sur Github</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">web</i>Site e-commerce jQuery</div>
+                    <div class="collapsible-body row">
+                        <img class="responsive-img col s6" src="assets/images/ecoJQuery.png" />
+                        <div class="col s6">
+                            <p>
+                                Réalisation d'un jeu en équipe pour la Ludum Dare 42 en équipe sur 72h avec le thème <span class="italic">"À court d'espace" (Running out of space)</span>. <br />
+                            </p>
+                            <div class="center-align">
+                                <a href="https://github.com/hidden-pill/pills" target="_blank">
+                                    <button class="waves-effect waves-red btn-large black">Voir sur Github</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">web</i>Site de la Nasa - Reproduction</div>
+                    <div class="collapsible-body row">
+                        <img class="responsive-img col s6" src="assets/images/projetNasa.png" />
+                        <div class="col s6">
+                            <p>
+                                Réalisation d'un jeu en équipe pour la Ludum Dare 42 en équipe sur 72h avec le thème <span class="italic">"À court d'espace" (Running out of space)</span>. <br />
+                            </p>
+                            <div class="center-align">
+                                <a href="https://github.com/hidden-pill/pills" target="_blank">
+                                    <button class="waves-effect waves-red btn-large black">Voir sur Github</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -132,7 +221,7 @@
         </section>
 
         <div class="parallax-container">
-            <div class="parallax"><img src="assets/images/forest.jpg"></div>
+            <div class="parallax"><img src="assets/images/coloredforest.jpg"></div>
         </div>
 
         <section id="contact" class="container">
@@ -156,7 +245,7 @@
                 <div class="center-align">
                     <button class="btn waves-effect waves-red black" type="submit">Soummetre votre message<i class="material-icons right">send</i></button>
                 </div>
-              </form>
+            </form>
         </section>
 
     </main>
