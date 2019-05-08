@@ -15,15 +15,16 @@
         <nav>
             <div class="nav-wrapper">
                 <ul id="nav-mobile" class="hide-on-med-and-down">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#home">Components</a></li>
-                    <li><a href="#home">JavaScript</a></li>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <main>
-        <section id="home" class="center-align">
+        <section id="home" class="center-align valign-wrapper">
             <div class="container">
                 <div id="header">
                     <img src="assets/images/logorobot2.png" alt="logo" />
@@ -42,7 +43,48 @@
                 </div>
             </div>
         </section>
-        <section id="projects" class="container">
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="assets/images/iceland.jpg"></div>
+        </div>
+
+        <section id="skills" class="row container">
+            <div class="col s12 m4">
+                <div class="frontend z-depth-1">
+                    <div class="white center-align">
+                        <i class="material-icons">web</i>
+                        <h3>Front-End</h3>
+                        <ul>
+                            <li>HTML / CSS / Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="backend z-depth-1">
+                    <div class="white center-align">
+                        <i class="material-icons">settings</i>
+                        <h3>Back-End</h3>
+                        <ul>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="others z-depth-1">
+                    <div class="white center-align">
+                        <i class="material-icons">settings</i>
+                        <h3>Autres</h3>
+                        <ul>
+                            <li>Maquettage / Prototypage (Adobe Xd)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
             <ul class="collapsible popout" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header"><i class="material-icons">videogame_asset</i>Ludum Dare 44</div>
@@ -86,54 +128,30 @@
         </section>
 
         <div class="parallax-container">
-            <div class="parallax"><img src="assets/images/iceland.jpg"></div>
-        </div>
-        <div class="section white">
-            <div class="row container">
-                <h2 class="header">Parallax</h2>
-                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-            </div>
-        </div>
-        <div class="parallax-container">
             <div class="parallax"><img src="assets/images/forest.jpg"></div>
         </div>
-            
-        <section id="skills" class="row container">
-            <div class="col s12 m4">
-                <div class="frontend z-depth-1">
-                    <div class="white center-align">
-                        <i class="material-icons">web</i>
-                        <h3>Front-End</h3>
-                        <ul>
-                            <li>HTML / CSS / Javascript</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="backend z-depth-1">
-                    <div class="white center-align">
-                        <i class="material-icons">settings</i>
-                        <h3>Back-End</h3>
-                        <ul>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="others z-depth-1">
-                    <div class="white center-align">
-                        <i class="material-icons">settings</i>
-                        <h3>Autres</h3>
-                        <ul>
-                            <li>Maquettage / Prototypage (Adobe Xd)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
+        <section id="contact" class="container">
+            <form action="https://formspree.io/emmanuel.galland117@gmail.com" method="POST" class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="formName" type="text" name="name" class="validate">
+                    <label for="formName">Votre Nom</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="formEmail" type="email" name="_replyto" class="validate">
+                    <label for="formEmail">Votre Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="formMessage" name="message" class="materialize-textarea"></textarea>
+                    <label for="formMessage">Votre Message</label>
+                </div>
+                <button class="btn waves-effect waves-red black" type="submit" name="action">Soummetre votre message<i class="material-icons right">send</i></button>
+              </form>
         </section>
+
     </main>
 
 

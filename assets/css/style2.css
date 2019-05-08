@@ -69,8 +69,8 @@ nav ul li {
 nav ul li a {
     display: inline-block;
 }
+
 #home .container{
-    margin-top: 20vh;
     background-color: rgba(255, 255, 255, 0.521);
     border: white solid 1px;
     border-radius: 5px;
@@ -126,4 +126,19 @@ h3{
 #skills i:hover{
     animation: big-little 1s infinite linear;
     cursor: pointer;
+}
+
+.collapsible-body{
+    background-color: #fff;
+}
+
+#portfolio .row{
+    margin: 0;
+}
+
+.parallax-container{
+    height: 200px;
+}
+section{
+    padding: 50px 0;
 }
